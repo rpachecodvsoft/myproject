@@ -4,8 +4,7 @@ services:
     env: python
     pythonVersion: 3.11
     buildCommand: pip install -r requirements.txt
-    baseDirectory: myproject          # <--- aquí le dices que el base dir es esta carpeta
-    startCommand: gunicorn myproject.wsgi:application --bind 0.0.0.0:$PORT
+    startCommand: gunicorn myproject.myproject.wsgi:application --bind 0.0.0.0:$PORT
     envVars:
       - key: DJANGO_SETTINGS_MODULE
-        value: myproject.settings
+        value: myproject.myproject.settings
