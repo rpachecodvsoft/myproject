@@ -1,5 +1,5 @@
 asgiref==3.8.1
-django==4.2.23
+django>=4.2.23,<5.0
 gunicorn==23.0.0
 packaging==25.0
 sqlparse==0.5.3
