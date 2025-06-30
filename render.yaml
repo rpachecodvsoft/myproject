@@ -2,11 +2,11 @@ services:
   - type: web
     name: django-app
     env: python
-    root: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: python [manage.py](http://_vscodecontentref_/5) migrate && gunicorn backend.wsgi:application --bind 0.0.0.0:8000
+    root: .
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: python backend/manage.py migrate && gunicorn backend.backend.wsgi:application --bind 0.0.0.0:8000
     envVars:
-    - key: DJANGO_SETTINGS_MODULE
-      value: backend.settings
-    - key: SECRET_KEY
-      value: tu_clave_secreta
+      - key: DJANGO_SETTINGS_MODULE
+        value: backend.backend.settings
+      - key: SECRET_KEY
+        value: tu_clave_secreta
