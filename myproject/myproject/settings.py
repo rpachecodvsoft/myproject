@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 try:
-    from zoneinfo import ZoneInfo  # Python 3.9+
+    from zoneinfo import ZoneInfo 
 except ImportError:
     from backports.zoneinfo import ZoneInfo  # Para Python 3.8 y anteriores
 
