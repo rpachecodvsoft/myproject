@@ -5,6 +5,4 @@ services:
     pythonVersion: 3.11
     buildCommand: pip install -r requirements.txt
     startCommand: bash -c "export DJANGO_SETTINGS_MODULE=myproject.myproject.settings && gunicorn myproject.myproject.wsgi:application --bind 0.0.0.0:8000"
-    envVars:
-      - key: DJANGO_SETTINGS_MODULE
-        value: myproject.myproject.settings
+    
