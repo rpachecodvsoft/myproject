@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: myproject
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn myproject.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: myproject.settings
+      - key: PYTHON_VERSION
+        value: "3.11"
+      # otros vars como DB, SECRET_KEY, etc.
