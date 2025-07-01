@@ -9,4 +9,4 @@ services:
         value: myproject.settings
       - key: PYTHON_VERSION
         value: "3.11"
-      # otros vars como DB, SECRET_KEY, etc.
+      #DB, SECRET_KEY, etc.
